@@ -1,0 +1,612 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Abdellatif BELMADY">
+      
+      
+      
+        <link rel="prev" href="../definitions-big-data-et-iot/">
+      
+      
+        <link rel="next" href="../approches-et-outils/">
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Exemples concrets d'utilisation du Big Data et de l'IoT - Fiche Synthèse - Big Data</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exemples-concrets-dutilisation-du-big-data-et-de-liot" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Fiche Synthèse - Big Data" class="md-header__button md-logo" aria-label="Fiche Synthèse - Big Data" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fiche Synthèse - Big Data
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exemples concrets d'utilisation du Big Data et de l'IoT
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/abdellatif-belmady/Project_Big-Data_documentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abdellatif-belmady/Project_Big-Data_documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Fiche Synthèse - Big Data" class="md-nav__button md-logo" aria-label="Fiche Synthèse - Big Data" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Fiche Synthèse - Big Data
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/abdellatif-belmady/Project_Big-Data_documentation" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abdellatif-belmady/Project_Big-Data_documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions-big-data-et-iot/" class="md-nav__link">
+        Définition du Big Data et de l'IoT
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exemples concrets d'utilisation du Big Data et de l'IoT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Exemples concrets d'utilisation du Big Data et de l'IoT
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-voitures-intelligentes" class="md-nav__link">
+    Les voitures intelligentes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-villes-intelligentes" class="md-nav__link">
+    Les villes intelligentes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-domotique" class="md-nav__link">
+    La domotique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-appareils-portables" class="md-nav__link">
+    Les appareils portables
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../approches-et-outils/" class="md-nav__link">
+        Approches et outils pour gérer le Big Data et l'IoT
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enjeux-et-defis/" class="md-nav__link">
+        Enjeux et défis liés au Big Data et à l'IoT
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../applications-de-ia/" class="md-nav__link">
+        Applications de l'IA dans le Big Data et l'IoT
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perspectives-futures/" class="md-nav__link">
+        Perspectives futures du Big Data et de l'IoT
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        Conclusion
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-voitures-intelligentes" class="md-nav__link">
+    Les voitures intelligentes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-villes-intelligentes" class="md-nav__link">
+    Les villes intelligentes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-domotique" class="md-nav__link">
+    La domotique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-appareils-portables" class="md-nav__link">
+    Les appareils portables
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/abdellatif-belmady/Project_Big-Data_documentation/tree/main/docs/cas-dusages.md" title="Editer cette page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+
+<h1 id="exemples-concrets-dutilisation-du-big-data-et-de-liot"><strong>Exemples concrets d'utilisation du Big Data et de l'IoT</strong><a class="headerlink" href="#exemples-concrets-dutilisation-du-big-data-et-de-liot" title="Permanent link">&para;</a></h1>
+<h2 id="les-voitures-intelligentes"><strong>Les voitures intelligentes</strong><a class="headerlink" href="#les-voitures-intelligentes" title="Permanent link">&para;</a></h2>
+<p>Les voitures intelligentes utilisent l’IoT pour échanger des informations liées au fonctionnement et l’environnement de la voitures, tel que l’emplacement, la vitesse, la dynamique…. Grace à l’IoT, on peut déterminer l’itinéraire le plus optimale, aussi, on peut localiser une place libre dans un parking. De plus, Il peut aider dans la réparation et l’entretien des véhicules, en fait, il informe l’utilisateur de la date de maintenance prévue, et il aide dans la réparation avec une direction adéquate. Ainsi, il permet aux voitures de faire des taches lourdes comme éviter les collisions et arrêter le trafic inutile.</p>
+<p>Ces voitures intelligentes sont équipées de caméras et de capteurs qui peuvent collecter des données sur l'environnement de la voiture. Cela peut inclure des éléments tels que les schémas de circulation, les conditions météorologiques et même l'emplacement et la vitesse des autres véhicules dans la région. Ce qui conduit à la collecte d’un volume important de données. </p>
+<h2 id="les-villes-intelligentes"><strong>Les villes intelligentes</strong><a class="headerlink" href="#les-villes-intelligentes" title="Permanent link">&para;</a></h2>
+<p>Les villes intelligentes utilisent l’IoT sur plusieurs aspects tel que : les transports automatiques, les systèmes intelligents de gestion de l’énergie et de distribution de l’eau, la sécurité urbaine et la surveillance de l’environnement.
+Ces villes utilisent l’IoT et le Big Data pour collecter et analyser des données provenant de diverses sources, telles que des capteurs et des caméras installer partout dans la ville, afin de résoudre les problèmes rencontrés par les citoyens, nous citons comme exemples :  </p>
+<p>•   Les systèmes intelligents de gestion du trafic qui utilisent les données des capteurs de trafic pour optimiser la circulation et réduire les embouteillages.</p>
+<p>•   Les systèmes d'éclairage intelligents qui utilisent des données provenant de capteurs pour ajuster la luminosité et la synchronisation des lampadaires.</p>
+<p>•   Les systèmes intelligents de gestion des déchets qui utilisent les données de capteurs de niveau de déchets pour optimiser les itinéraires de collecte des ordures.</p>
+<p>•   Les systèmes de stationnement intelligents qui utilisent les données fournies par des capteurs pour guider les conducteurs vers les places de stationnement disponibles et réduire les embouteillages.</p>
+<p>•   Les systèmes de surveillance de la qualité de l'air et de l'eau qui utilisent des capteurs IoT pour détecter et alerter les responsables de la ville des dangers potentiels. </p>
+<p>Certains rapports estiment que les villes intelligentes peuvent générer jusqu'à térabytes de données par jour, ce volume de données est en constante augmentation en raison de la croissance de l'Internet des objets (IoT) et de la 5G.</p>
+<h2 id="la-domotique"><strong>La domotique</strong><a class="headerlink" href="#la-domotique" title="Permanent link">&para;</a></h2>
+<p>Les systèmes domotiques ou les maisons intelligentes contient des appareilles qui fonctionnent à base de l’IoT, comme les climatiseurs, les lumières et les ventilateurs. Cela donne la possibilité à l’utilisateur de contrôler sa maison à une distance étendue, en fait, il peut contrôler la température, l’éclairage, la gestion de l’énergie, l’expansion, le système de sécurité, et l’accès à distance.</p>
+<p>La domotique utilise des capteurs, des actionneurs, des réseaux de communication et des systèmes de contrôle pour automatiser les tâches ménagères et améliorer le confort et la sécurité des résidents.
+La domotique utilise les technologies du Big Data, et des algorithmes d’analyse des données pour prévoir les besoins futurs et anticiper les problèmes. Par exemple, en utilisant des données sur les tendances de consommation d'énergie, les systèmes de domotique peuvent ajuster automatiquement les paramètres de chauffage et de climatisation pour réduire la consommation d'énergie.</p>
+<p>En conclusion, la domotique et le BIG Data sont étroitement liés car ces derniers permettent de collecter, stocker et utiliser des données pour améliorer les performances des systèmes de domotique en termes de confort, sécurité et économie d'énergie.</p>
+<h2 id="les-appareils-portables"><strong>Les appareils portables</strong><a class="headerlink" href="#les-appareils-portables" title="Permanent link">&para;</a></h2>
+<p>De nos jours, l’IoT a été intégré dans la plupart des appareils portable, ces dernières contient des caméras, des capteurs de son, les réseaux et la connexion à internet, qui utilisent pour collecter certaines informations sur l’utilisateurs, notamment : </p>
+<p>•   Les données de localisation : les smartphones utilisent des technologies comme GPS, Wi-Fi et les réseaux cellulaires pour déterminer la position de l'utilisateur.</p>
+<p>•   Les données de navigation : les smartphones enregistrent les sites web et les applications que l'utilisateur a visités.</p>
+<p>•   Les données de contacts : les smartphones stockent les informations de contact de l'utilisateur, comme les numéros de téléphone et les adresses e-mail.</p>
+<p>•   Les données de messages : les smartphones peuvent stocker les messages texte et les conversations de messagerie instantanée de l'utilisateur.</p>
+<p>•   Les données de médias : les smartphones peuvent stocker les photos, les vidéos et les fichiers audio pris ou enregistrés par l'utilisateur.</p>
+<p>Les rapports informent que aujourd’hui les serveurs de Facebook doivent analyser tous les demi-heure l’équivalent de 105 To de données (Botton ‘’j’aime’’, photos, requête … ).</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../definitions-big-data-et-iot/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Définition du Big Data et de l&#39;IoT" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Précédent
+                </span>
+                Définition du Big Data et de l'IoT
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../approches-et-outils/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Approches et outils pour gérer le Big Data et l&#39;IoT" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Suivant
+                </span>
+                Approches et outils pour gérer le Big Data et l'IoT
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 - 2023 Abdellatif BELMADY
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.expand", "navigation.footer"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

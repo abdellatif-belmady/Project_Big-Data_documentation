@@ -1,4 +1,4 @@
-
+# **Enjeux et défis liés au Big Data et à l'IoT**
 
 Le recours au big data s'avère ainsi substantiel pour l'exploitation et le traitement des vastes quantités de données collectées par les dispositifs connectés (iot), dont les enjeux sont listés ci-dessous :
 

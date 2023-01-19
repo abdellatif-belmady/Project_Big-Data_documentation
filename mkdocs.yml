@@ -1,0 +1,135 @@
+# Project information
+site_name: Fiche Synthèse - Big Data
+repo_url: https://github.com/abdellatif-belmady/Project_Big-Data_documentation
+site_author: Abdellatif BELMADY
+edit_uri: https://github.com/abdellatif-belmady/Project_Big-Data_documentation/tree/main/docs
+repo_name: abdellatif-belmady/Project_Big-Data_documentation
+
+# Copyright
+copyright: Copyright &copy; 2022 - 2023 Abdellatif BELMADY
+
+# Configuration
+theme:
+  language: fr
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      # primary: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      # primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    
+  logo: assets/logo.png
+
+  favicon: assets/logo.png
+
+  name: material
+  
+  features:
+    - content.action.edit
+    # - announce.dismiss
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - navigation.expand
+    - navigation.footer
+    # - toc.integrate
+  
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Customization
+#extra:
+  #social:
+    #- icon: fontawesome/brands/github
+     # link: https://github.com/Other-Ways
+    #- icon: fontawesome/brands/linkedIn
+     # link: https://www.linkedin.com/company/other-ways25/
+    #- icon: fontawesome/brands/facebook
+     # link: https://web.facebook.com/people/Other-Ways/100080686222034/
+    #- icon: fontawesome/brands/youtube
+    #  link: https://www.youtube.com/@otherways8368/featured
+    #- icon: fontawesome/brands/instagram
+    #  link: https://www.instagram.com/otherways25?utm_source=qr
+    
+# Page tree
+nav:
+      - Introduction: index.md
+      - Définition du Big Data et de l'IoT: definitions-big-data-et-iot.md
+      - Exemples concrets d'utilisation du Big Data et de l'IoT: cas-dusages.md
+      - Approches et outils pour gérer le Big Data et l'IoT: approches-et-outils.md
+      - Enjeux et défis liés au Big Data et à l'IoT: enjeux-et-defis.md
+      - Applications de l'IA dans le Big Data et l'IoT: applications-de-ia.md
+      - Perspectives futures du Big Data et de l'IoT: perspectives-futures.md
+      - Conclusion: conclusion.md
+
+
+
+
+
+
+
